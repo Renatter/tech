@@ -1,6 +1,5 @@
 <template>
   <div class="text-[30px] container">
-    <img src="../../../assets/google-1318.png" class="rounded-[15px]" alt="" />
     <h1 class="text-[30px] font-serif pt-[30px]">Популярное</h1>
     <div>
       <router-link to="/card" class="flex justify-between flex-wrap gap-[10px]">
