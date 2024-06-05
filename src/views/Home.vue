@@ -106,25 +106,6 @@
       </div>
     </div>
   </div>
-  <div class="bg-[#232D51] text-white">
-    <div class="container">
-      <h1 class="text-[30px] font-serif pt-[30px]">Жаналыктар</h1>
-      <div class="flex gap-[15px] pb-[30px]">
-        <router-link v-for="x in news" :to="{ path: '/news/' + x.title }">
-          <div>
-            <img
-              :src="x.img"
-              alt=""
-              class="rounded-t-[15px] w-[500px] h-[300px]"
-            />
-            <h1 class="bg-white text-black p-[10px] font-bold rounded-b-[15px]">
-              {{ x.title }}
-            </h1>
-          </div>
-        </router-link>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>

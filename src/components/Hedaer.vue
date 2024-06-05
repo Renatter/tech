@@ -3,10 +3,7 @@
     <div
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >
-      <a
-        href="https://flowbite.com/"
-        class="flex items-center space-x-3 rtl:space-x-reverse"
-      >
+      <a class="flex items-center space-x-3 rtl:space-x-reverse">
         <img
           src="https://cms.object.pscloud.io/wwwroot/img/logo.webp"
           class="h-8"
@@ -43,15 +40,15 @@
         </router-link>
         <router-link to="/admin">
           <button
-            v-if="role == 'admin'"
+            v-if="role == 'manager'"
             type="button"
             class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 ml-[10px]"
           >
-            Админ
+            Менеджер
           </button>
         </router-link>
         <button
-          v-if="role == 'user' || role == 'admin'"
+          v-if="role == 'user' || role == 'manager'"
           @click="logout"
           type="button"
           class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 ml-[10px]"
@@ -115,15 +112,6 @@
                 class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Каталог</a
               >
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/News">
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Жаналыктар
-              </a>
             </router-link>
           </li>
         </ul>

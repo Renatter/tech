@@ -14,9 +14,7 @@ import AddPhone from './views/add/AddPhone.vue';
 import AddNout from './views/add/AddNout.vue';
 import basket from './views/Basket.vue';
 import order from './views/Order.vue';
-import addNews from './views/AddNews.vue';
-import newsPage from './views/newsPage.vue';
-import News from './views/News.vue';
+
 import about from './views/About.vue';
 const router = createRouter({
     history: createWebHistory(),
@@ -76,21 +74,7 @@ const router = createRouter({
             name: '/order',
             component: order,
         },
-        {
-            path: '/addNews',
-            name: '/addNews',
-            component: addNews,
-        },
-        {
-            path: '/News',
-            name: '/News',
-            component: News,
-        },
-        {
-            path: '/news/:id',
-            name: '/news/:id',
-            component: newsPage,
-        },
+
         {
             path: '/about',
             name: '/about',

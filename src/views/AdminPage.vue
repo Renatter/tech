@@ -47,15 +47,6 @@
             />
           </div>
         </router-link>
-        <router-link to="/addNews">
-          <div>
-            <img
-              width="250px"
-              src="https://avatars.mds.yandex.net/i?id=96d9af9839f535a6746bf8873d547b5dec8f9512-10629685-images-thumbs&n=13"
-              alt=""
-            />
-          </div>
-        </router-link>
       </div>
     </div>
   </div>

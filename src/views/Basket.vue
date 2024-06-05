@@ -35,9 +35,6 @@
           Тапсырыс беру
         </button>
       </div>
-      <div v-else class="text-center font-bold text-[30px] text-[orange]">
-        Техника жолда!!
-      </div>
     </div>
 
     <div

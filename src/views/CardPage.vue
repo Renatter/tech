@@ -218,15 +218,12 @@ export default {
             order: false,
             cart: updatedCart,
           };
-
+          this.$router.push("/");
           await setDoc(docRef, updatedCartData);
-
-          console.log("Өнім қосылды", newCartItem);
         } catch (error) {
           console.error("Ошибка при добавлении товара в корзину:", error);
         }
       }
-      alert("Өнім қосылды");
     },
   },
   async created() {
