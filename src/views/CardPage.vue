@@ -144,6 +144,7 @@
               {{ item.price }} ₸
             </h1>
             <button
+              v-if="currentUser"
               @click="addToCart"
               type="button"
               class="text-white w-[100%] ml-[30px] bg-[#FC6B58] hover:bg-[#FC6B58] focus:ring-4 font-bold text-[20px] rounded-[20px] text-sm px-5 py-2.5 me-2 mb-2 h-[60px]"
